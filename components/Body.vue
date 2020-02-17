@@ -1,11 +1,11 @@
 
 <template>
     <div class="body">
-        <hr />
+        <!-- <hr /> -->
         <form class="desc">
             <textarea id="w3mission" rows="6" cols="52" placeholder="Go Ahead write about yourself..."/>
         </form>
-        <hr />
+        <!-- <hr /> -->
         <div class="buttons">
             <button class="close" @click="$emit('close-modal')">Close</button>
             <button class="save" @click="$emit('close-modal')">Save Changes</button>
@@ -21,6 +21,8 @@
         /* padding: 10px; */
         width: 100%;
         height: 100%;
+        border-top: 1px solid #DCDCDC;
+        border-bottom: 1px solid #DCDCDC; 
     }
     textarea {
         resize: none;
