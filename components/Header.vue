@@ -16,7 +16,7 @@
         padding: 10px 0px 0px 10px;
     }
     button {
-        background: #DCDCDC;
+        background: inherit;
         border: none;
         cursor: pointer;
         padding: 10px 10px 0px 0px;

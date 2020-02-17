@@ -2,7 +2,7 @@
 <template>
   <div class="modal" v-show="value">
     <Header v-on:close-modal="$emit('close-modal')"/>
-    <Body />
+    <Body v-on:close-modal="$emit('close-modal')" />
   </div>
 </template>
     
@@ -26,6 +26,7 @@ import Body from './Body'
     
 <style lang="css" scoped>
   .modal {
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
+    border: 1px solid #DCDCDC;
   }
 </style>

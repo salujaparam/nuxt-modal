@@ -1,14 +1,15 @@
 
 <template>
     <div class="body">
-      <p class="desc">
-          This Modal is made using a framework called Nuxt.js.
-            Nuxt is based on a powerful modular architecture.
-            Nuxt.js is a free and open source web application
-            framework based on Vue.js, Node.js, Webpack and Babel.js.
-             The framework is advertised as a meta-framework for universal
-            applications. 
-      </p>
+        <hr />
+        <form class="desc">
+            <textarea id="w3mission" rows="6" cols="52" placeholder="Go Ahead write about yourself..."/>
+        </form>
+        <hr />
+        <div class="buttons">
+            <button class="close" @click="$emit('close-modal')">Close</button>
+            <button class="save" @click="$emit('close-modal')">Save Changes</button>
+        </div>
     </div>
 </template>
     
@@ -17,7 +18,38 @@
         padding-top: 20px;
     }
     .desc {
-        padding: 10px;
-        text-align: justify;
+        /* padding: 10px; */
+        width: 100%;
+        height: 100%;
+    }
+    textarea {
+        resize: none;
+        border: none;
+        /* background-color: #DCDCDC; */
+    }
+    textarea::placeholder{
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .buttons {
+        padding: 1rem 0 0 13rem;
+    }
+    .close {
+        background-color: #A9A9A9;
+        color: white;
+        width: 4rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .save {
+        background-color: #1E90FF;
+        color: white;
+        width: 7rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
     }
 </style>
