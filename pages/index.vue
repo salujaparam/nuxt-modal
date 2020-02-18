@@ -40,11 +40,12 @@ export default {
     transform: translate(-50%, -50%);
   }
   .modal {
-    height: 15rem;
     width: 25rem;
     position: absolute;
     left: 50%;
     top: 50%;
+    min-height: 15rem;
     transform: translate(-50%, -50%);
+    z-index: 1 !important;
   }
 </style>
